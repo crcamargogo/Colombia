@@ -237,12 +237,7 @@ function initGroupAssignment() {
             const missionTooltip = document.createElement('div');
             missionTooltip.classList.add('space-tooltip', 'mission-tooltip');
             missionTooltip.innerHTML = `
-                <div class="tooltip-content">
-                    <div class="tooltip-icon">🎯</div>
-                    <h3>¡Misión Asignada!</h3>
-                    <p>Dirígete a tu grupo asignado para comenzar tu aventura espacial</p>
-                    <div class="pulse-arrow">→</div>
-                </div>
+                
             `;
             document.body.appendChild(missionTooltip);
             

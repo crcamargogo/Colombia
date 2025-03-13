@@ -1358,3 +1358,6 @@ h1 {
     line-height: 1.4;
     text-align: center;
 }
+.close-modal {
+    display: block;  /* O inline-block */
+}
