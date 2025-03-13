@@ -1316,8 +1316,13 @@ h1 {
 .dialog-bubble {
 
     
-    opacity: 1; /* Asegura que no esté oculto */
-    visibility: visible;
+ 
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transition: none !important;
+    
+    
     background: rgba(237, 237, 240, 0.9);
     border-radius: 15px;
     padding: 20px 30px;
