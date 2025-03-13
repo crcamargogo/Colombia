@@ -550,7 +550,7 @@ document.querySelector(".decoration-avatar").addEventListener("mouseleave", func
     let video = document.getElementById("thought-video");
 
     video.pause(); // Pausar video
-    bubbleContainer.style.display = "none"; // Ocultar burbuja
+    bubbleContainer.style.display = "block"; // Ocultar burbuja
 });
 
 /* Animación de aparición */

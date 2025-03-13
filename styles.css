@@ -1285,3 +1285,76 @@ h1 {
     height: 100%;
     border-radius: 50%;
 }
+.thought-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    max-width: 90%;
+}
+
+/* Burbuja de pensamiento: No se toca */
+
+/* Nueva Burbuja de Diálogo */
+.dialog-container {
+    position: absolute;
+    bottom: -100px; /* Asegura que esté debajo del astronauta */
+    left: 50%;
+    top: 400px;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Burbuja */
+.dialog-bubble {
+
+    
+ 
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transition: none !important;
+    
+    
+    background: rgba(237, 237, 240, 0.9);
+    border-radius: 15px;
+    padding: 20px 30px;
+    width: 80%; /* Ajustable según el diseño */
+    max-width: 920px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: 2px solid #529bdf;
+
+    height: auto; /* Permite que el contenedor crezca según el contenido */
+    min-height: 410px; /* Evita que sea muy pequeño */
+    overflow: visible; /* Asegura que el texto no se corte */
+    word-wrap: break-word; /* Permite dividir palabras largas */
+    white-space: normal; /* Permite saltos de línea */
+   
+}
+/* Flecha */
+.dialog-bubble::after {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #ff0077;
+}
+
+/* Texto */
+.dialog-text {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.4;
+    text-align: center;
+}
